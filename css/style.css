@@ -81,6 +81,7 @@ figcaption {
 .quotes-container p {
     font-style: italic;
     padding: 0 30px;
+    color: #fff;
 }
 
 /* Curiosidades */
@@ -93,7 +94,7 @@ figcaption {
 }
 
 .curiosities-container li {
-    height: 30px;
+    padding-bottom: 10px;
 }
 
 /* Imagem Bold */
@@ -101,6 +102,8 @@ figcaption {
 .img-bold {
     font-weight: bold;
     text-align: center;
+    border-top: 1px dashed #007cad3b;
+    margin-top: 25px;
 }
 
 .img-destaque {
@@ -111,11 +114,11 @@ figcaption {
 
 .link, 
 .link-2 {
-    color: #007DAD;
-    border: 1px solid #007DAD;
-    padding: 2px 5px;
+    color: #C22E17;
+    border: 1px solid #C22E17;
+    padding: 5px 10px;
     text-decoration: none;
-    border-radius: 20px;
+    border-radius: 6px;
     background-color: #fff;
 }
 
@@ -125,14 +128,26 @@ figcaption {
 
 .link:hover,
 .link-2:hover {
-    color: #005272;
-    border: 1px solid #005272;
+    color: #fff;
+    background-color: #C22E17;
 }
 
 @media (max-width: 600px) {
     .moreinfo-container {
         text-align: center;
         padding: 10px;
+    }
+
+    figcaption {
+        font-size: 12px;
+    }
+
+    .quotes-container{
+        padding: 10px 10px;
+    }
+
+    .quotes-container blockquote{
+        font-size: 20px;
     }
 
     .link-2 {
@@ -142,4 +157,23 @@ figcaption {
     .link {
         display: none;
     }
+}
+
+.footer-page h3, a{
+    border-top: 1px dashed #66d6ff3b;
+    border-bottom: 1px dashed #66d6ff3b;
+    padding: 10px 10px;
+    color: #0055773b;
+    text-align: center;
+    text-decoration: none;
+}
+
+.footer-page {
+    max-width: 1100px;
+    position: relative;
+    margin: 50px auto;
+}
+
+.footer-page a:hover {
+    color: #00b7ff3b;
 }
